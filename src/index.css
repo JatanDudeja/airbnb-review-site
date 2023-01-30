@@ -1,13 +1,113 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    margin: 0;
+}
+
+nav{
+    height: 70px;
+    display: flex;
+    padding: 20px 36px;
+    box-shadow: 0px 2.9825618267059326px 7.456404209136963px 0px #0000001A;
+    ;
+}
+
+
+.navbar-logo_image{
+    max-width: 100px;
+}
+
+section{
+    padding: 20px;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.Hero-grid{
+    align-self: center;
+    max-width: 400px;
+}
+
+
+.hero-heading{
+    margin-bottom: 16px;
+}
+
+
+.hero-para{
+    margin-top: 0px;
+}
+
+
+
+.gray{
+    color: gray;
+}
+
+
+
+ .cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+
+.card {
+    width: 175px;
+    font-size: 12px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card--image{
+    width: 100%;
+    border-radius: 9px;
+    margin-bottom: 9px;
+}
+
+.card--title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card--stats {
+    display: flex;
+    align-items: center;
+}
+
+.card--star {
+    height: 14px;
+}
+
+.card--price {
+    margin-top: auto;
+}
+
+.card--badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+
+.App{
+    height: 800px;
+    max-width: 450px;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 10px 10px 60px grey
+
 }
